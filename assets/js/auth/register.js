@@ -16,6 +16,7 @@ form_register.onsubmit = async (e) => {
 
     //get values of form
     const formData = new FormData(form_register);
+    formData.append("role", "user");
 
 //fetch api user register
     const response = await fetch (backendURL + "/api/user"

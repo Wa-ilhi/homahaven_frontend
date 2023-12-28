@@ -2,8 +2,38 @@ import { setRouter }  from "../router/router.js";
 
 setRouter();
 //backend url
-const backendURL="https://f6bf-103-169-69-142.ngrok-free.app";
+const backendURL="https://e5ae-103-169-69-204.ngrok-free.app";
 
+async function getLoggedUser() {
+    // Access User Profile API Endpoint
+    const response = await fetch(backendURL + "/api/profile/show", {
+      headers: {
+        Accept: "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    });
+  
+    // Get response if 200-299 status code
+    if (response.ok) {
+      const json = await response.json();
+  
+      document.getElementById("user_logged").innerHTML =
+        json.firstname + " " + json.lastname;
+  
+      if (document.getElementById("user_id")) {
+        document.getElementById("user_id").value = json.id;
+      }
+
+      localStorage.setItem("role", json.role);
+    }
+    // Get response if 400 or 500 status code
+    else {
+      const json = await response.json();
+  
+      errorNotification(json.message, 10);
+    }
+  }
+  
 
 function successNotification(message, seconds=0){
     document.querySelector(".alert-success").classList.remove('d-none');
@@ -30,4 +60,20 @@ function errorNotification(message, seconds=0){
     }, seconds * 1000);
 }
 }
-export{backendURL, successNotification,errorNotification};
+
+function showNavAdminPages() {
+    if (localStorage.getItem("role") == "manager") {
+      document.getElementById(
+        "nav_admin_pages"
+      ).innerHTML = `
+          <a class="nav-link" href="dashboard.html">
+            <div class="sb-nav-link-icon">
+            </div>
+            List Property
+          </a>`;
+    }
+  }
+
+
+
+export{backendURL, showNavAdminPages,successNotification,errorNotification, };

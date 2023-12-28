@@ -26,8 +26,8 @@
   <link href="assets/css/style.css" rel="stylesheet">
   <script defer src="assets/js/mainjs.js"></script>
   <script src="assets/js/auth/register.js" type="module"></script>
- <script type="module" src="assets/js/auth/login.js"></script>
-  
+  <script type="module" src="assets/js/auth/login.js"></script>
+
 
 
 
@@ -61,11 +61,11 @@
                 <option>Apartment</option>
                 <option>Condo</option>
                 <option>Land</option>
-               
+
               </select>
             </div>
           </div>
-        
+
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
               <label class="pb-2" for="address">Address</label>
@@ -75,7 +75,8 @@
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
               <label class="pb-2" for="bedrooms">Bedrooms</label>
-              <input type="number" class="form-control form-control-a" id="bedrooms" placeholder="Number of Bedrooms" min="1">
+              <input type="number" class="form-control form-control-a" id="bedrooms" placeholder="Number of Bedrooms"
+                min="1">
             </div>
           </div>
           <div class="col-md-6 mb-2">
@@ -92,7 +93,8 @@
           <div class="col-md-6 mb-2">
             <div class="form-group mt-3">
               <label class="pb-2" for="squareFootage">Square Footage</label>
-              <input type="number" class="form-control form-control-a" id="squareFootage" placeholder="Square Footage" min="1">
+              <input type="number" class="form-control form-control-a" id="squareFootage" placeholder="Square Footage"
+                min="1">
             </div>
           </div>
           <div class="col-md-6 mb-2">
@@ -129,7 +131,8 @@
   <!-- ======= Header/Navbar ======= -->
   <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
     <div class="container">
-      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarDefault"
+        aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
         <span></span>
         <span></span>
@@ -151,109 +154,106 @@
             <a class="nav-link " href="property-grid.html">Property</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">Pages</a>
             <div class="dropdown-menu">
               <a class="dropdown-item " href="property-single.html">Property Single</a>
-             
+
             </div>
 
-          
+
           <li class="nav-item">
             <a class="nav-link " href="contact.html">Contact</a>
           </li>
-      
-          
+
+
         </ul>
         <button class="login-btn">Login</button>
       </div>
-       
+
       <!--Poput form-->
       <form id="form_login">
-      <div class="blur-bg-overlay"></div>
-      <div class="form-popout">
-         
-        <span class="close-btn material-symbols-rounded">X</span>
-        <!--Notification-->
-        <div class="alert alert-success d-none" role="alert">
-        </div>
-        <div class="alert alert-danger d-none" role="alert">
-        </div>
+        <div class="blur-bg-overlay"></div>
+        <div class="form-popout">
 
-        <div class="form-box login">
-          <div class="form-details">
-            <h2>Welcome Back</h2>
-            <p>
-              Please login using your personal information to stay connected with us.
-            </p>
+          <span class="close-btn material-symbols-rounded">X</span>
+          <!--Notification-->
+          <div class="alert alert-success d-none" role="alert">
           </div>
-          <div class="form-content">
-            <h2>LOGIN</h2>
+          <div class="alert alert-danger d-none" role="alert">
+          </div>
 
-            
-            <form action="#">
-              <div class="input-field">
-                <input type="email" id="Email" name="email">
-                <label>Email</label>
-              </div>
-              <div class="input-field">
-                <input type="password" id="Password" name="password">
-                <label>Password</label>
-              </div>
-              <br>
-              <select name="userType" id="userType" required>
-                <option value="" disabled selected>Select user type</option>
-                <option value="user">User</option>
-                <option value="admin">Manager</option>
-              </select>
-              <button type="submit">Log in
-              </button>
-              <div class="bottom-link">Don't have and account?
-                <a href="#"  id="signup-link">Signup</a>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="form-box signup">
-          <div class="form-details">
-            <h2>Create Account</h2>
-            <p>
-              To be come part of our community, please sign up using your personal information
-            </p>
-          </div>
-        </form>
-        <form id="form_register">
-          <div class="form-content">
-            <h2>SIGNUP</h2>
-
-            <div class="alert alert-success d-none" role="alert">
+          <div class="form-box login">
+            <div class="form-details">
+              <h2>Welcome Back</h2>
+              <p>
+                Please login using your personal information to stay connected with us.
+              </p>
             </div>
-            <div class="alert alert-danger d-none" role="alert">
-            </div>
+            <div class="form-content">
+              <h2>LOGIN</h2>
 
-            <form action="#">
-              <div class="input-field">
-                <input type="text" id="firstname" name="firstname" required>
-                <label for="firstname">First Name</label>
-              </div>
-              <div class="input-field">
-                <input type="text" id="lastname" name="lastname" required>
-                <label for="lastname">Last Name</label>
-              </div>
-              <div class="input-field">
-                <input type="email" id="email" name="email" required>
-                <label for="email">Email Address</label>
-              </div>
-              <div class="input-field">
-                <input type="password" id="password" name="password" required>
-                <label for="password">Password</label>
-              </div>
-              <div class="input-field">
-                <input type="password" id="password_confirmation" name="password_confirmation" required>
-                <label for="password_confirmation">Confirm Password</label>
-              </div>
+
+              <form action="#">
                 <div class="input-field">
-      
-      </div>
+                  <input type="email" id="Email" name="email">
+                  <label>Email</label>
+                </div>
+                <div class="input-field">
+                  <input type="password" id="Password" name="password">
+                  <label>Password</label>
+                </div>
+                <br>
+
+                <button type="submit">Log in
+                </button>
+                <div class="bottom-link">Don't have and account?
+                  <a href="userDashboard.html" id="signup-link">Signup</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="form-box signup">
+            <div class="form-details">
+              <h2>Create Account</h2>
+              <p>
+                To be come part of our community, please sign up using your personal information
+              </p>
+            </div>
+      </form>
+      <form id="form_register">
+        <div class="form-content">
+          <h2>SIGNUP</h2>
+
+          <div class="alert alert-success d-none" role="alert">
+          </div>
+          <div class="alert alert-danger d-none" role="alert">
+          </div>
+
+          <form action="#">
+            <div class="input-field">
+              <input type="text" id="firstname" name="firstname" required>
+              <label for="firstname">First Name</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="lastname" name="lastname" required>
+              <label for="lastname">Last Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Email Address</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="password" name="password" required>
+              <label for="password">Password</label>
+            </div>
+            <div class="input-field">
+              <input type="password" id="password_confirmation" name="password_confirmation" required>
+              <label for="password_confirmation">Confirm Password</label>
+            </div>
+            <div class="input-field">
+
+            </div>
             <div class="policy-text">
               <input type="checkbox" id="policy">
               <label for="policy">
@@ -261,24 +261,25 @@
                 <a href="#">Terms and Conditions</a>
               </label>
             </div>
-              <button type="submit">Sign Up
-              </button>
-              <div class="bottom-link">Already have an account?
-                <a href="#" id="login-link">Login</a>
-              </div>
-            </form>
-          </div>
+            <button type="submit">Sign Up
+            </button>
+            <div class="bottom-link">Already have an account?
+              <a href="#" id="login-link">Login</a>
+            </div>
+          </form>
         </div>
-      </form>
-      </div>
+    </div>
+    </form>
+    </div>
 
 
-      
-      
 
-      <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
-        <i class="bi bi-search"></i>
-      </button>
+
+
+    <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo01">
+      <i class="bi bi-search"></i>
+    </button>
 
     </div>
   </nav><!-- End Header/Navbar -->
@@ -289,15 +290,15 @@
     <div class="swiper-wrapper">
 
       <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/er.png)">
-      
+
         <div class="intro-content display-table">
           <div class="table-cell">
             <div class="container">
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                  
-                
+
+
                   </div>
                 </div>
               </div>
@@ -305,14 +306,15 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-1.jpg)">
+      <div class="swiper-slide carousel-item-a intro-item bg-image"
+        style="background-image: url(assets/img/slide-1.jpg)">
         <div class="intro-content display-table">
           <div class="table-cell">
             <div class="container">
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                    
+
                   </div>
                 </div>
               </div>
@@ -320,15 +322,16 @@
           </div>
         </div>
       </div>
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-2.jpg)">
-      
+      <div class="swiper-slide carousel-item-a intro-item bg-image"
+        style="background-image: url(assets/img/slide-2.jpg)">
+
         <div class="intro-content display-table">
           <div class="table-cell">
             <div class="container">
               <div class="row">
                 <div class="col-lg-8">
                   <div class="intro-body">
-                  
+
                   </div>
                 </div>
               </div>
@@ -367,10 +370,13 @@
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  In the realm of real estate, our services go beyond merely facilitating property transactions. We are dedicated to curating a lifestyle for our clients, a lifestyle that transcends the physical confines of a house or property. We understand that a home is more than just a structure; it is a reflection of one's aspirations, values, and, most importantly, their way of life.
+                  In the realm of real estate, our services go beyond merely facilitating property transactions. We are
+                  dedicated to curating a lifestyle for our clients, a lifestyle that transcends the physical confines
+                  of a house or property. We understand that a home is more than just a structure; it is a reflection of
+                  one's aspirations, values, and, most importantly, their way of life.
                 </p>
               </div>
-            
+
             </div>
           </div>
           <div class="col-md-4">
@@ -385,12 +391,14 @@
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                  In the realm of loans, our services extend far beyond the financial transaction itself. We understand that obtaining a loan is not just about securing funds; it's about empowering individuals and businesses to realize their aspirations and navigate important life milestones.
+                  In the realm of loans, our services extend far beyond the financial transaction itself. We understand
+                  that obtaining a loan is not just about securing funds; it's about empowering individuals and
+                  businesses to realize their aspirations and navigate important life milestones.
 
 
                 </p>
               </div>
-          
+
             </div>
           </div>
           <div class="col-md-4">
@@ -405,11 +413,14 @@
               </div>
               <div class="card-body-c">
                 <p class="content-c">
-                 
-In the realm of property sales, our approach is centered around more than just completing a transaction; it's about facilitating a seamless and rewarding experience for sellers. We understand that selling a property is often a significant milestone, and our services are crafted to maximize your property's value while minimizing the stress associated with the sales process.
+
+                  In the realm of property sales, our approach is centered around more than just completing a
+                  transaction; it's about facilitating a seamless and rewarding experience for sellers. We understand
+                  that selling a property is often a significant milestone, and our services are crafted to maximize
+                  your property's value while minimizing the stress associated with the sales process.
                 </p>
               </div>
-            
+
             </div>
           </div>
         </div>
@@ -494,7 +505,7 @@ In the realm of property sales, our approach is centered around more than just c
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single4.html">Taguibo 
+                        <a href="property-single4.html">Taguibo
                           <br /> Ampayon</a>
                       </h2>
                     </div>
@@ -635,9 +646,9 @@ In the realm of property sales, our approach is centered around more than just c
       </div>
     </section><!-- End Latest Properties Section -->
 
-  
-    
-   
+
+
+
 
   </main><!-- End #main -->
 
@@ -647,9 +658,9 @@ In the realm of property sales, our approach is centered around more than just c
       <div class="row">
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
-          
-       
-     
+
+
+
   </section>
   <footer>
     <div class="container">
@@ -702,7 +713,8 @@ In the realm of property sales, our approach is centered around more than just c
   </footer><!-- End  Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

@@ -34,9 +34,10 @@ form_login.onsubmit = async (e) => {
             console.log(json);
         
             localStorage.setItem("token", json.token);
+            localStorage.setItem("role", json.user.role);
             form_login.reset();
         
-            window.location.href = "/Frontend/userDashboard.html";
+            window.location.href = "/userDashboard.html";
         }
         //get response if 422 status code
         else if (response.status ==422){
